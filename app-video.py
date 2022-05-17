@@ -90,13 +90,13 @@ if __name__ == '__main__':
     global ALLOWED_EXTENSIONS
     ALLOWED_EXTENSIONS = set(['mp4'])
 
-    upload_directory = "/data/upload/"
+    upload_directory = "data/upload/"
     create_directory(upload_directory)
 
-    results_video_directory = "/data/video/result/"
+    results_video_directory = "data/video/result/"
     create_directory(results_video_directory)
 
-    model_directory = "/data/models/"
+    model_directory = "data/models/"
     create_directory(model_directory)
 
     video_model_url = (
@@ -110,7 +110,7 @@ if __name__ == '__main__':
     video_colorizer = get_video_colorizer()
     video_colorizer.result_folder = Path(results_video_directory)
 
-    port = 5000
-    host = "0.0.0.0"
+    port = 5001
+    host = "localhost"
 
     app.run(host=host, port=port, threaded=False)
