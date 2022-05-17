@@ -1,3 +1,14 @@
+# Plittersdorf customization
+
+1. install requirements
+2. if automated weights download fails: Create `models` folder in the main directory and download the following three weights into it:
+### Completed Generator Weights
+
+- [Artistic](https://data.deepai.org/deoldify/ColorizeArtistic_gen.pth) (optional)
+- [Stable](https://www.dropbox.com/s/usf7uifrctqw9rl/ColorizeStable_gen.pth?dl=0)
+- [Video](https://data.deepai.org/deoldify/ColorizeVideo_gen.pth) (optional)
+
+3. run: e.g. `python plittersdorf_inference.py --source_path /media/mlk/storage/pltsdrf/detections_images/`
 
 # DeOldify
 
